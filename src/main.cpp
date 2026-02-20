@@ -20,3 +20,10 @@ void setup() {
     pinMode(echoPin, INPUT);
     Serial.println("Ultrasonic Distance Measurement Initialized");
 }
+
+void loop() {
+    digitalWrite(trigPin, LOW);
+    delayMicroseconds(2);
+
+    digitalWrite(trigPin, HIGH);
+    delayMicroseconds(10);
