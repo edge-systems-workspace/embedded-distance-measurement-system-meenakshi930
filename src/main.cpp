@@ -12,3 +12,5 @@
 
 #define trigPin 9
 #define echoPin 10
+long duration = 0;
+long distance = 0;
