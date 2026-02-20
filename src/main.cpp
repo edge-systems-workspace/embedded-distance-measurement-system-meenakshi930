@@ -14,3 +14,9 @@
 #define echoPin 10
 long duration = 0;
 long distance = 0;
+void setup() {
+    Serial.begin(9600);
+    pinMode(trigPin, OUTPUT);
+    pinMode(echoPin, INPUT);
+    Serial.println("Ultrasonic Distance Measurement Initialized");
+}
